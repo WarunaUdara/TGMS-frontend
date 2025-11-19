@@ -300,6 +300,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 TGMS Development Team
 
+- Malin Ruwanpathirana
+
+- Waruna Udara 
+
+- Yesith Sri Hansana
+
+- Vidun Thamuditha
+
+- Gehan Malshan
+
 ## 📧 Support
 
 For issues and questions, please contact the development team or create an issue in the repository.
