@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Light Theme (Default) */
+:root {
+  --color-1: oklch(0.178 0.029 145.0);
+  --color-2: oklch(0.209 0.041 145.0);
+  --color-3: oklch(0.272 0.076 145.0);
+  --color-4: oklch(0.322 0.103 145.0);
+  --color-5: oklch(0.367 0.125 145.0);
+  --color-6: oklch(0.417 0.145 145.0);
+  --color-7: oklch(0.484 0.164 145.0);
+  --color-8: oklch(0.571 0.181 145.0);
+  --color-9: oklch(0.623 0.178 145.0);
+  --color-10: oklch(0.676 0.167 145.0);
+  --color-11: oklch(0.843 0.107 145.0);
+  --color-12: oklch(0.919 0.063 145.0);
+
+  --background: var(--color-12);
+  --foreground: var(--color-1);
+  --primary: var(--color-9);
+  --secondary: var(--color-7);
+  --accent: var(--color-8);
+  --muted: var(--color-11);
+  --border: var(--color-10);
+}
+
+/* Dark Theme (System Preference) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-1);
+    --foreground: var(--color-12);
+    --primary: var(--color-9);
+    --secondary: var(--color-7);
+    --accent: var(--color-8);
+    --muted: var(--color-2);
+    --border: var(--color-3);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
